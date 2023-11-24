@@ -1,0 +1,25 @@
+<header>
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <!-- <img src="../assets/logo.jpg" alt="Educator Logo" /> -->
+        <h1 class="logo-text">PostEx</h1>
+      </div>
+  
+      <ul class="navbar-nav" [ngClass]="{'active':showManu}">
+        <li class="nav-item" *ngFor="let link of navbarLinks">
+          <a [routerLink]="link.route">{{link.text}}</a>
+        </li>  
+      </ul>
+  
+      <button class="btn btn-primary">
+        <a routerLink="#contact"> <p class="btn-text">join us now</p></a>
+        <span class="square"></span>
+      </button>
+  
+      <button (click)="toggleManue()" class="nav-toggle-btn" [ngClass]="{'active':showManu}">
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </button>
+    </nav>
+  </header>

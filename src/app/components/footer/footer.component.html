@@ -1,0 +1,50 @@
+<footer>
+    <div class="footer-grid">
+      <div class="grid-item">
+        <div class="footer-logo">
+        <h1 class="logo-text">PostEx</h1>
+        </div>
+
+        <p class="footer-text">
+            With one-click prebuilt plugin integrations for systems like Shopify, wooCommerce, Magento and more and go live in as little as 10 minutes
+        </p>
+
+    
+      </div>
+
+      <ul class="grid-item">
+        <h4 class="item-heading">Our Link</h4>
+
+        <li class="list-item" *ngFor="let link of footerLinks">
+          <a routerLink="">{{link}}</a>
+        </li>
+       
+      </ul>
+
+      <ul class="grid-item">
+        <h4 class="item-heading">Other Link</h4>
+
+        <li class="list-item" *ngFor="let link of otherLinks">
+          <a routerLink="">{{link}}</a>
+        </li>
+
+        
+      </ul>
+
+      <div class="grid-item">
+        <h4 class="item-heading">Subscribe Now</h4>
+
+        <div class="wrapper">
+          <input type="text" name="subscribe" placeholder="Email Address" />
+
+          <button class="send-btn">
+           send
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <p class="copyright">
+      Copyright © 2023 <a routerLink="">EnginnerAliHassan</a>. All rights reserved.
+    </p>
+  </footer>

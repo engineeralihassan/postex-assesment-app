@@ -1,0 +1,53 @@
+<section class="contact">
+    <div class="row">
+      <div class="image">
+        <img src="../../../assets/contact-img.svg" alt="" />
+      </div>
+
+      <form id="contactform" [formGroup]="contactForm" (ngSubmit)="submitForm()">
+        <h3>Get in touch</h3>
+        <input
+          placeholder="Enter your name"
+          class="box name"
+          id="name"
+          formControlName="name"
+        />
+        <div class="error-message" *ngIf="contactForm.get('name')?.hasError('required') && contactForm.get('name')?.touched">
+            Name is required
+          </div>
+        <input
+          placeholder="Enter your email"
+          class="box email"
+          id="email"
+          formControlName="email"
+        />
+        <div class="error-message" *ngIf="contactForm.get('email')?.hasError('required') && contactForm.get('email')?.touched">
+            Email is required
+          </div>
+          <div class="error-message" *ngIf="contactForm.get('email')?.hasError('email') && contactForm.get('email')?.touched">
+            Invalid email format
+          </div>
+        <input
+          placeholder="Enter your number"
+          type="tel"
+          id="phone"
+          class="box phone"
+          formControlName="phone"
+        />
+        <div class="error-message" *ngIf="contactForm.get('phone')?.hasError('required') && contactForm.get('phone')?.touched">
+            Phone is required
+          </div>
+
+        <textarea
+          class="box message"
+          placeholder="How can we help you"
+          cols="10"
+          rows="5"
+          formControlName="msg"
+        ></textarea>
+        <button class="btn btn-primary" [disabled]="!contactForm.valid" type="submit" (click)="submitForm()">
+            <p class="btn-text">Send message</p>
+          </button>
+      </form>
+    </div>
+  </section>
