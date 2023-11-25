@@ -1,27 +1,24 @@
 # PostexAssesmentApp
+Note: Bassically itried to copy somthing like PostEx Real website in Design. I implement all the functionalities like lazy loading forms with error handling, good looking UI, 3 pages with diffrent modules. routing etc.  
+Home page Screen shoots
+## Navbar & Hero section image
+![image](https://github.com/engineeralihassan/postex-assesment-app/assets/106416367/fb6b79f5-9680-4317-9245-3445270c3f49)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.3.
+## Footer and sticky navbar imag
+![image](https://github.com/engineeralihassan/postex-assesment-app/assets/106416367/762b9ac2-5e79-4124-8f69-e0eabdd86273)
 
-## Development server
+## Grid type data show image
+![image](https://github.com/engineeralihassan/postex-assesment-app/assets/106416367/f3b836d4-7753-498a-9e8d-c9c0857b16a3)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Table data with pagination loading 
+![image](https://github.com/engineeralihassan/postex-assesment-app/assets/106416367/ec2da790-17b3-417e-956c-8fe8a00a95df)
 
-## Code scaffolding
+## Contact us page iamge
+![image](https://github.com/engineeralihassan/postex-assesment-app/assets/106416367/2a8e8218-832d-4dcc-923d-9d342bb09c9e)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
